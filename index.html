@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Update Bot</title>
+	<script type="text/javascript" src="js/jquery-1.10.2-min.js"></script>
+</head>
+<body>
+	<div id="updateack"></div>
+	<button id="update">Update Me</button>
+	<script type="text/javascript">
+		$(function(){
+			$('#update').click(function(){
+				$.get('update.php', function(data) {
+					$('#updateack').text('Updated Successfully');
+				});
+			})
+		})
+	</script>
+</body>
+</html>
