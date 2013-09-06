@@ -10,7 +10,7 @@
 		$(function(){
 			$('#update').click(function(){
 				$.get('update.php', function(data) {
-					$('#updateack').text('Updated Successfully');
+					$('#updateack').text(data);
 				});
 			})
 		})
